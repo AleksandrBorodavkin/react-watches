@@ -1,0 +1,5 @@
+.watches-container {
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+}
