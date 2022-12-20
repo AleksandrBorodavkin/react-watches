@@ -3,7 +3,8 @@ import {useEffect, useState} from "react";
 import './watch.css'
 
 function Watch({handleDelete, offset, id, name}) {
-    const nowTime = new Date();
+    const forOffset = new Date(Date.now());
+    const nowTime = new Date(Date.now() + forOffset.getTimezoneOffset()*60*1000);
     const seconds = nowTime.getSeconds();
     const minute = nowTime.getMinutes();
     const hour = nowTime.getHours();
